@@ -1,17 +1,21 @@
-package Pessoas;
+package CriandoPessoa;
 
-public class Pessoa {
+public class Pessoa1 {
+
     private String nome;
+
     private int idade;
+
     private String cpf;
 
-    public Pessoa(String nome, int idade, String cpf) {
+    public Pessoa1(String nome, int idade){
         this.nome = nome;
         this.idade = idade;
         this.cpf = cpf;
+
     }
 
-    public String getNome() {
+    public String getNome(String nome) {
         return nome;
     }
 
@@ -34,15 +38,4 @@ public class Pessoa {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", cpf='" + cpf + '\'' +
-                '}';
-    }
 }
-
-
